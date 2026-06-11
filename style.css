@@ -1,14 +1,13 @@
-
 /* ==========================================================================
    CONFIGURAÇÕES GERAIS E VARIÁVEIS (Tema Agrinho 2026)
    ========================================================================== */
 :root {
-    --cor-principal: #2E7D32;     /* Verde fazenda / Natureza */
-    --cor-secundaria: #81C784;    /* Verde claro de destaque */
-    --cor-fundo: #F5F5F0;         /* Branco areia suave para o fundo */
-    --cor-texto: #3E2723;         /* Marrom terra escuro para leitura confortável */
-    --cor-detalhe: #FFB300;       /* Amarelo ouro / Sol / Colheita */
-    --fonte-principal: 'Arial', sans-serif;
+    --verde-escuro: #1b5e20;   /* Cor principal da agricultura */
+    --verde-folha: #4caf50;    /* Detalhes e destaques */
+    --marrom-terra: #4e342e;   /* Cor dos textos e rodapé */
+    --fundo-suave: #f1f8e9;    /* Fundo leve para não cansar a vista */
+    --branco: #ffffff;
+    --laranja-sol: #ff9800;    /* Cor de destaque para o botão */
 }
 
 * {
@@ -18,108 +17,71 @@
 }
 
 body {
-    font-family: var(--fonte-principal);
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo-suave);
+    color: var(--marrom-terra);
     line-height: 1.6;
 }
 
 /* ==========================================================================
-   ESTRUTURA DO LAYOUT (Header, Main, Footer)
+   CABECALHO E NAVEGAÇÃO (Header & Nav)
    ========================================================================== */
 header {
-    background-color: var(--cor-principal);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--branco);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--cor-detalhe);
+    color: var(--laranja-sol);
 }
 
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (Main)
+   ========================================================================== */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1100px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
 section {
-    background: white;
-    padding: 20px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--verde-escuro);
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-footer {
-    background-color: var(--cor-texto);
-    color: white;
+    font-size: 2rem;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    margin-top: 40px;
 }
 
-/* ==========================================================================
-   ELEMENTOS DE TEXTO E BOTÕES
-   ========================================================================== */
-h1, h2, h3 {
-    color: var(--cor-principal);
-    margin-bottom: 15px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-.btn-agrinho {
-    display: inline-block;
-    background-color: var(--cor-detalhe);
-    color: var(--cor-texto);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s, background-color 0.3s;
-}
-
-.btn-agrinho:hover {
-    background-color: #FFA000;
-    transform: scale(1.05);
-}
-
-/* ==========================================================================
-   RESPONSIVIDADE (Design para Celular)
-   ========================================================================== */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    main {
-        padding: 0 10px;
-    }
-
-    section {
-        padding: 15px;
-    }
-}
+/* Seção Destaque (Hero) */
+.hero {
+    background: linear-gradient(rgba(27, 94, 32, 0.85), rgba(27, 94, 32, 0.85)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1000') no-repeat center center/cover;
+    color: var(--branco);
+    padding: 60px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0
