@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agro Forte, Futuro Sustentável — Projeto Agrinho 2026. Conheça práticas de agricultura regenerativa, tecnologia no campo e calcule seu impacto ambiental.">
+    <meta name="keywords" content="agro sustentável, agrinho 2026, agricultura regenerativa, ILPF, plantio direto, bioinsumos, ESG rural">
+    <meta name="author" content="Projeto Agrinho 2026">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:title" content="Agro Forte, Futuro Sustentável | Agrinho 2026">
+    <meta property="og:description" content="O equilíbrio perfeito entre alta produtividade agrícola e conservação dos ecossistemas brasileiros.">
+    <meta property="og:type" content="website">
+    
     <title>Agro Forte, Futuro Sustentável | Projeto Agrinho 2026</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontes e Ícones externos -->
+    
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <!-- ==========================================
+         CABEÇALHO E NAVEGAÇÃO
+         ========================================== -->
     <header class="header">
         <div class="logo">
-            <span class="logo-icon">🌱</span>
+            <span class="logo-icon" aria-hidden="true">🌱</span>
             <div class="logo-text">
                 <h1>Agro Sustentável</h1>
                 <small>Projeto Agrinho 2026</small>
             </div>
         </div>
-        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Abrir Menu">
+        
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav class="nav-menu" id="navMenu">
+        
+        <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#dados">Dados do Agro</a></li>
@@ -40,8 +56,10 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
-        <section id="inicio" class="hero">
+        <!-- ==========================================
+             HERO SECTION
+             ========================================== -->
+        <section id="inicio" class="hero" aria-label="Introdução do projeto">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <span class="badge-hero">Inovação & Preservação no Campo</span>
@@ -54,47 +72,56 @@
             </div>
         </section>
 
-        <!-- DADOS E MÉTRICAS REAIS DO AGRO BRASILEIRO -->
-        <section id="dados" class="section-container">
+        <!-- ==========================================
+             DADOS E MÉTRICAS REAIS DO AGRO BRASILEIRO
+             ========================================== -->
+        <section id="dados" class="section-container" aria-labelledby="titulo-dados">
             <div class="section-title">
-                <h2>O Impacto do Agro Sustentável em Números</h2>
+                <h2 id="titulo-dados">O Impacto do Agro Sustentável em Números</h2>
                 <p>Dados reais da agricultura regenerativa e conservacionista no Brasil (Fontes: Embrapa / MAPA)</p>
             </div>
+            
             <div class="metrics-grid">
                 <div class="metric-card">
                     <span class="metric-number" data-target="33">0</span><span class="metric-unit">Mi ha</span>
                     <h3>Sistema Plantio Direto</h3>
-                    <p>Área cultivada sem revolvimento do solo, reduzindo a erosão e sequestrando carbono no solo.</p>
+                    <p>Área cultivada sem revolvimento do solo, reduzindo erosão e sequestrando carbono.</p>
                 </div>
+                
                 <div class="metric-card">
                     <span class="metric-number" data-target="17">0</span><span class="metric-unit">Mi ha</span>
                     <h3>Integração ILPF</h3>
-                    <p>Sistemas de Integração Lavoura-Pecuária-Floresta otimizando o uso da terra durante o ano todo.</p>
+                    <p>Sistemas de Integração Lavoura-Pecuária-Floresta otimizando o uso da terra.</p>
                 </div>
+                
                 <div class="metric-card">
                     <span class="metric-number" data-target="66">0</span><span class="metric-unit">%</span>
                     <h3>Vegetação Preservada</h3>
-                    <p>Do território nacional mantido com vegetação nativa, com forte contribuição do produtor rural.</p>
+                    <p>Do território nacional mantido com vegetação nativa, com contribuição do produtor rural.</p>
                 </div>
+                
                 <div class="metric-card">
                     <span class="metric-number" data-target="40">0</span><span class="metric-unit">%</span>
                     <h3>Uso de Bioinsumos</h3>
-                    <p>Crescimento na substituição de insumos químicos por soluções biológicas no manejo de pragas.</p>
+                    <p>Crescimento na substituição de insumos químicos por soluções biológicas no manejo.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PILARES ESTRATÉGICOS -->
-        <section id="pilares" class="section-container bg-light">
+        <!-- ==========================================
+             PILARES ESTRATÉGICOS
+             ========================================== -->
+        <section id="pilares" class="section-container bg-light" aria-labelledby="titulo-pilares">
             <div class="section-title">
-                <h2>Nossos Pilares Fundamentais</h2>
+                <h2 id="titulo-pilares">Nossos Pilares Fundamentais</h2>
                 <p>Estratégias para garantir segurança alimentar com responsabilidade socioambiental</p>
             </div>
+            
             <div class="cards-grid">
                 <article class="pillar-card">
-                    <div class="pillar-icon">🌾</div>
+                    <div class="pillar-icon" aria-hidden="true">🌾</div>
                     <h3>Produção Eficiente & Vertical</h3>
-                    <p>Aumento da produtividade por hectare por meio do manejo integrado de solos, genética avançada e rotação de culturas, produzindo mais sem necessidade de desmatamento.</p>
+                    <p>Aumento da produtividade por hectare por meio do manejo integrado de solos, genética avançada e rotação de culturas.</p>
                     <ul class="pillar-list">
                         <li>Restauração de pastagens degradadas</li>
                         <li>Eficiência no uso da água e irrigação por gotejamento</li>
@@ -102,9 +129,9 @@
                 </article>
 
                 <article class="pillar-card">
-                    <div class="pillar-icon">🌳</div>
+                    <div class="pillar-icon" aria-hidden="true">🌳</div>
                     <h3>Preservação & Serviços Ambientais</h3>
-                    <p>Proteção rigorosa de Reservas Legais e Áreas de Preservação Permanente (APPs), promovendo corredores ecológicos e a conservação da biodiversidade nativa.</p>
+                    <p>Proteção rigorosa de Reservas Legais e APPs, promovendo corredores ecológicos e conservação da biodiversidade.</p>
                     <ul class="pillar-list">
                         <li>Sequestro e fixação de Carbono Neutro</li>
                         <li>Proteção de nascentes e microbacias hídricas</li>
@@ -112,9 +139,9 @@
                 </article>
 
                 <article class="pillar-card">
-                    <div class="pillar-icon">🚜</div>
+                    <div class="pillar-icon" aria-hidden="true">🚜</div>
                     <h3>Tecnologia & Agricultura de Precisão</h3>
-                    <p>Uso de IoT, sensores de solo, mapeamento via satélite e drones para aplicação localizada de insumos, reduzindo desperdícios e impacto ambiental.</p>
+                    <p>Uso de IoT, sensores de solo, mapeamento via satélite e drones para aplicação localizada de insumos.</p>
                     <ul class="pillar-list">
                         <li>Drones de pulverização ultra-localizada</li>
                         <li>Análise preditiva de clima e pragas</li>
@@ -122,9 +149,9 @@
                 </article>
 
                 <article class="pillar-card">
-                    <div class="pillar-icon">👥</div>
+                    <div class="pillar-icon" aria-hidden="true">👥</div>
                     <h3>Responsabilidade Social & ESG</h3>
-                    <p>Capacitação técnica do produtor familiar, incentivo ao trabalho seguro no campo e desenvolvimento econômico sustentável das comunidades rurais.</p>
+                    <p>Capacitação do produtor familiar, trabalho seguro no campo e desenvolvimento econômico das comunidades rurais.</p>
                     <ul class="pillar-list">
                         <li>Certificação social e ambiental de propriedades</li>
                         <li>Sucessão familiar e inclusão digital no campo</li>
@@ -133,40 +160,49 @@
             </div>
         </section>
 
-        <!-- TECNOLOGIA NO CAMPO -->
-        <section id="tecnologia" class="section-container">
+        <!-- ==========================================
+             TECNOLOGIA NO CAMPO
+             ========================================== -->
+        <section id="tecnologia" class="section-container" aria-labelledby="titulo-tecnologia">
             <div class="section-title">
-                <h2>Inovação & Práticas Sustentáveis</h2>
+                <h2 id="titulo-tecnologia">Inovação & Práticas Sustentáveis</h2>
                 <p>Conheça as tecnologias digitais que estão transformando a agricultura brasileira</p>
             </div>
+            
             <div class="tech-container">
                 <div class="tech-box">
                     <h4>📡 Sensores de Solo e IoT</h4>
-                    <p>Monitoram a umidade e nutrientes em tempo real, permitindo a irrigação de precisão e evitando o estresse hídrico da planta com economia de até 40% de água.</p>
+                    <p>Monitoram umidade e nutrientes em tempo real, permitindo irrigação de precisão com economia de até 40% de água.</p>
                 </div>
+                
                 <div class="tech-box">
-                    <h4>🚁 Drones de Mapeamento e Manejo</h4>
-                    <p>Identificam reboleiras de ervas daninhas e focos de pragas, permitindo a aplicação direcionada de defensivos biológicos apenas onde é necessário.</p>
+                    <h4>🚁 Drones de Mapeamento</h4>
+                    <p>Identificam reboleiras de ervas daninhas e focos de pragas, permitindo aplicação direcionada de defensivos.</p>
                 </div>
+                
                 <div class="tech-box">
-                    <h4>☀️ Energia Solar Fotovoltaica Rural</h4>
-                    <p>Geração de energia limpa em granjas, pivôs centrais e galpões agrícolas, tornando a propriedade auto-sustentável e reduzindo a pegada de carbono.</p>
+                    <h4>☀️ Energia Solar Rural</h4>
+                    <p>Geração limpa em granjas, pivôs centrais e galpões, tornando a propriedade auto-sustentável.</p>
                 </div>
+                
                 <div class="tech-box">
                     <h4>🪲 Bioinsumos e Controle Biológico</h4>
-                    <p>Uso de microrganismos e insetos benéficos para combater pragas, fortalecendo a saúde biológica do solo e das culturas.</p>
+                    <p>Uso de microrganismos e insetos benéficos para combater pragas, fortalecendo a saúde do solo.</p>
                 </div>
             </div>
         </section>
 
-        <!-- FERRAMENTA INTERATIVA 1: CALCULADORA DE SUSTENTABILIDADE -->
-        <section id="calculadora" class="section-container bg-light">
+        <!-- ==========================================
+             CALCULADORA DE SUSTENTABILIDADE
+             ========================================== -->
+        <section id="calculadora" class="section-container bg-light" aria-labelledby="titulo-calc">
             <div class="section-title">
-                <h2>Simulador de Impacto Sustentável</h2>
-                <p>Estime os benefícios ambientais e econômicos ao adotar práticas sustentáveis em sua propriedade ou região</p>
+                <h2 id="titulo-calc">Simulador de Impacto Sustentável</h2>
+                <p>Estime os benefícios ambientais e econômicos ao adotar práticas sustentáveis em sua propriedade</p>
             </div>
+            
             <div class="calculator-card">
-                <form id="calcForm" class="calc-form">
+                <form id="calcForm" class="calc-form" novalidate>
                     <div class="form-group">
                         <label for="hectares">Tamanho da Propriedade (Hectares):</label>
                         <input type="number" id="hectares" min="1" max="100000" placeholder="Ex: 50" required>
@@ -186,21 +222,21 @@
                     <button type="submit" class="btn btn-primary">Calcular Estimativa de Impacto</button>
                 </form>
 
-                <div id="calcResultado" class="calc-result hidden">
+                <div id="calcResultado" class="calc-result hidden" aria-live="polite">
                     <h3>Impacto Estimado por Ano:</h3>
                     <div class="result-grid">
                         <div class="result-item">
-                            <span class="result-icon">☁️</span>
+                            <span class="result-icon" aria-hidden="true">☁️</span>
                             <strong id="co2Evitado">0</strong>
                             <p>Toneladas de CO² evitadas/sequestradas</p>
                         </div>
                         <div class="result-item">
-                            <span class="result-icon">💧</span>
+                            <span class="result-icon" aria-hidden="true">💧</span>
                             <strong id="aguaEconomizada">0</strong>
                             <p>Milhões de litros de água conservados</p>
                         </div>
                         <div class="result-item">
-                            <span class="result-icon">💰</span>
+                            <span class="result-icon" aria-hidden="true">💰</span>
                             <strong id="economiaEstimada">R$ 0</strong>
                             <p>Economia estimada em insumos e energia</p>
                         </div>
@@ -209,45 +245,49 @@
             </div>
         </section>
 
-        <!-- FERRAMENTA INTERATIVA 2: QUIZ AGRINHO 2026 -->
-        <section id="quiz" class="section-container">
+        <!-- ==========================================
+             QUIZ AGRINHO 2026
+             ========================================== -->
+        <section id="quiz" class="section-container" aria-labelledby="titulo-quiz">
             <div class="section-title">
-                <h2>Quiz Agrinho: Teste Seus Conhecimentos</h2>
+                <h2 id="titulo-quiz">Quiz Agrinho: Teste Seus Conhecimentos</h2>
                 <p>Descubra o quanto você sabe sobre sustentabilidade no agronegócio modernizado</p>
             </div>
+            
             <div class="quiz-card">
                 <div id="quizContainer">
                     <div class="quiz-progress">
-                        <span id="quizStep">Pergunta 1 de 3</span>
+                        <span id="quizStep">Pergunta 1 de 5</span>
                     </div>
                     <h3 id="quizQuestion" class="quiz-question">Carregando pergunta...</h3>
-                    <div id="quizOptions" class="quiz-options">
-                        <!-- Opções geradas via JavaScript -->
-                    </div>
+                    <div id="quizOptions" class="quiz-options" role="group" aria-label="Opções de resposta"></div>
                     <button id="btnNextQuiz" class="btn btn-secondary hidden">Próxima Pergunta</button>
                 </div>
 
-                <div id="quizResult" class="quiz-result hidden">
+                <div id="quizResult" class="quiz-result hidden" aria-live="polite">
                     <span class="quiz-badge-result">🏆 Resultado</span>
-                    <h3 id="quizScoreText">Você acertou 0 de 3!</h3>
-                    <p id="quizFeedback">Excelente! Você demonstra ótimo conhecimento sobre o agronegócio moderno e sustentável.</p>
+                    <h3 id="quizScoreText">Você acertou 0 de 5!</h3>
+                    <p id="quizFeedback">Excelente! Você demonstra ótimo conhecimento sobre o agronegócio moderno.</p>
                     <button id="btnRestartQuiz" class="btn btn-primary">Refazer Quiz</button>
                 </div>
             </div>
         </section>
 
-        <!-- FORMULÁRIO DE CONTATO FUNCIONAL -->
-        <section id="contato" class="section-container bg-light">
+        <!-- ==========================================
+             FORMULÁRIO DE CONTATO
+             ========================================== -->
+        <section id="contato" class="section-container bg-light" aria-labelledby="titulo-contato">
             <div class="section-title">
-                <h2>Fale Conosco & Faça Parte</h2>
+                <h2 id="titulo-contato">Fale Conosco & Faça Parte</h2>
                 <p>Envie suas dúvidas, sugestões de projetos ou solicite materiais educativos do Projeto Agrinho</p>
             </div>
+            
             <div class="contact-wrapper">
                 <form id="meuFormulario" class="contact-form" novalidate>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nome">Nome Completo:</label>
-                            <input type="text" id="nome" placeholder="Digite seu nome" required>
+                            <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail de Contato:</label>
@@ -268,49 +308,4 @@
                         </div>
                         <div class="form-group">
                             <label for="campoTexto">Assunto Principal:</label>
-                            <input type="text" id="campoTexto" placeholder="Ex: Projeto de irrigação solar" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensagem">Sua Mensagem:</label>
-                        <textarea id="mensagem" rows="4" placeholder="Escreva aqui detalhes da sua dúvida ou sugestão..." required></textarea>
-                    </div>
-
-                    <button type="submit" id="meuBotao" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
-
-                <div id="resultado" class="feedback-message" aria-live="polite"></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>🌱 Agro Sustentável</h3>
-                <p>Iniciativa em prol da conscientização, inovação e sustentabilidade no campo.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navegação Rápida</h4>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#dados">Métricas</a></li>
-                    <li><a href="#pilares">Pilares</a></li>
-                    <li><a href="#calculadora">Calculadora</a></li>
-                </ul>
-            </div>
-            <div class="footer-info">
-                <h4>Projeto Agrinho 2026</h4>
-                <p>Educação, Ética e Sustentabilidade para um futuro produtivo e preservado.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Projeto Agrinho. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                            <input type="text" id="campoTexto" placeholder="Ex: Projeto de irrigação
